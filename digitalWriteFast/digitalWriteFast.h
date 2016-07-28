@@ -302,6 +302,9 @@
 // --- Other ---
 #else
 
+#define I2C_SDA_PIN     SDA
+#define I2C_SCL_PIN     SCL
+
 #define SPI_HW_SS_PIN   SS
 #define SPI_HW_MOSI_PIN MOSI
 #define SPI_HW_MISO_PIN MISO
