@@ -261,11 +261,9 @@
 // --- Arduino Uno ---
 #elif (defined(ARDUINO_AVR_UNO) || \
        defined(ARDUINO_AVR_DUEMILANOVE) || \
-       defined(ARDUINO_ARCH_AVR) || \
        defined(__AVR_ATmega328__) || \
        defined(__AVR_ATmega328P__) || \
-       defined(__AVR_ATmega328PB__) || \
-       defined(__AVR__))
+       defined(__AVR_ATmega328PB__))
 
 #define UART_RX_PIN     (0) //PD0
 #define UART_TX_PIN     (1) //PD1
