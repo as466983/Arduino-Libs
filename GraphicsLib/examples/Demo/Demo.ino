@@ -34,11 +34,14 @@ void setup()
   uint8_t clear_bg=0x00; //0x80 = dont clear background for fonts (only for DisplayXXX)
 
   //init display
-  lcd.begin(); //spi-clk=SPI_CLOCK_DIV4
-  //lcd.begin(SPI_CLOCK_DIV2); //spi-clk=SPI_CLOCK_DIV2
-  //lcd.begin(SPI_CLOCK_DIV4, 8); //SPI Displays: spi-clk=Fcpu/4, rst-pin=8
-  //lcd.begin(0x20); //I2C Displays: addr=0x20
-  //lcd.begin(0x20, 8); //I2C Displays: addr=0x20, rst-pin=8
+  lcd.begin();
+  //SPI Displays
+  // lcd.begin(); //spi-clk=Fcpu/4
+  // lcd.begin(SPI_CLOCK_DIV2); //spi-clk=Fcpu/2
+  // lcd.begin(SPI_CLOCK_DIV4, 8); //spi-clk=Fcpu/4, rst-pin=8
+  //I2C Displays
+  // lcd.begin(0x20); //addr=0x20
+  // lcd.begin(0x20, 8); //addr=0x20, rst-pin=8
 
 
   //clear screen
